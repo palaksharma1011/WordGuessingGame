@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="game to guess a word" />
+    <title>GUESS THE WORD</title>
+
+    <!-- linking icon for title tab -->
+    <link
+      rel="icon"
+      href="assets/gameicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font style borel added from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Rubik+Puddles&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- linking my style sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- linking js file that contain animation for general page -->
+    <script defer src="animation.js"></script>
+
+  </head>
+  <body>
+    <header>
+        <h1>Ready to test your wits? Step up and play Guess the Word! 🧠✨</h1>
+      <nav>      
+        <ul class="hidden">
+          <li id="restartbtn"><img src="assets/restart.png" width="40" />Restart the game</li>
+          <li><a href="#previous-score">
+            <img src="assets/score.png" width="40" />Check my previous streaks</a>
+          </li>
+          <li id="sharebtn"><img src="assets/share.png" width="40" />Share my streak on whatsapp</li>
+          <li><img src="assets/profile.png" width="40" />Profile</li>
+          <li>
+            <input type="checkbox" id="setting" />
+            
+            <label for="setting"><i class="fa-solid fa-gear setting"></i> Settings </label>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+    <aside>
+        <div class="setting-menu">
+
+            <ul>
+                <li><button id="close"><i class="fa-solid fa-xmark"></i></button></li>
+                <!-- for color mode -->
+                <li>
+                    <label for="dark">Want dark mode?</label>
+                    <input type="radio" name="mode" id="dark" value="dark-mode" checked />
+                </li>
+                <li>
+                    <label for="light">Want light mode?</label>
+                    <input type="radio" name="mode" id="light" value="light-mode" />
+                </li>
+                <li>
+                    <button id="logout">LOGOUT<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                </li>
+                <li>
+                    <button id="add-another-profile">ADD ANOTHER PROFILE<i class="fa-solid fa-user-plus"></i></button>
+                </li>
+
+                
+            </ul>
+        </div>
+    </aside>
+
+    <main >
+
+        <div id="game-container">
+            <div id="score"><p>Your longest streak in this turn is : </p></div>
+            <div id="word-generating-area"></div>
+            <div id="input-area-container">
+            <div id="input-area">
+                <h3>The first letter of this word is missing guess what it is? </h3>
+                <!-- <input type="text" id="input" placeholder="Enter that first letter"/> -->
+                <textarea></textarea>
+
+                <button id="submit"><i class="fa-regular fa-paper-plane"></i></button>
+             </div>
+             </div>
+    </main>
+
+    <section id="previous-score">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Turn</th>
+              <th>streak</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+    </sectin>
+  
+
+    <!-- linking js file that contain functions and actions for gerneral page -->
+    <script src="script.js"></script>
+    <!-- linking js file that contain npm package actions and also main purpose of webpage -->
+    <!-- <script type="module" src="index.js"></script> -->
+
+    <script src="bundle.js"></script>
+
+  </body>
+</html>

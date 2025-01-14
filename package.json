@@ -1,0 +1,23 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "vite": "^6.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "start": "live-server"
+  },
+  "author": "PALAK SHARMA",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
+}

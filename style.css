@@ -1,0 +1,190 @@
+:root{
+    --main-color:darkorchid;
+    --complement-color:black;
+    --text-color:white;
+}
+
+body {
+    background-color:var(--main-color);
+  margin: 0;
+  padding: 0;
+  font-family: "Borel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+    color:white;
+    text-decoration: none;
+    &:hover{
+        color: black;
+    }
+}
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    top:0;
+    background: black;
+    color:white;
+    text-align: center;
+    padding: 0.5em;
+    display: block;
+    width: 100vw;
+}
+nav ul {
+    position: sticky;
+    top:0;
+    margin-top: 0;
+  font-family: "Rubik Puddles", serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex: wrap;
+  justify-content: space-around;
+
+  padding-left:0px ;
+  padding-top:0.5em ;
+  padding-bottom:0.5em ;
+  color: white;
+  width: 100vw;
+}
+nav li {
+  background-color: transparent;
+  border-radius: 2em;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 2vw;
+  width: fit-content;
+  list-style: none;
+  transition: all 1s ease-in-out;
+  text-align: center;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+ul li img{
+    margin: auto;
+    display: block;
+}
+ input {
+  display: none;  
+}
+.spin {
+    position: relative;
+  transform: rotate(540deg) scale(1.5);
+  transition: all 2s ease-in-out;
+}
+.setting-menu {
+    visibility: hidden;
+    width:30vw;
+    position: absolute;
+    right:0px;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    input{
+        background-color: violet;
+
+    }
+    ul{
+    font-family: "Borel", serif;
+    color:black;
+    }
+    li{
+        list-style: none;
+    }
+    i{
+        padding: 1em;
+    }
+    button{
+        background-color: var(--complement-color);
+        color: var(--text-color);
+        border: none;
+        font-family: "Borel", serif;
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 1em;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        transition-behavior: smooth;
+        &:hover{
+            background-color: var(--main-color);
+            text-shadow:2px 2px 2px black;
+        }
+    }
+}
+#score{
+    color:black;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    height:10vh;
+    
+}
+
+#word-generating-area{
+
+    margin: auto;
+    margin-top: 2em;
+    background-color: saddlebrown;
+    width:fit-content;
+    text-decoration: underline;
+    text-underline-offset: 1em;
+    border: 2px solid black;    
+    padding: 1em;
+    &:first-letter{
+        background-color: white;
+        color:white;
+    }
+
+}
+#input-area{
+    padding: 1em;
+    margin-top: 2em;
+    bottom: 2em;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    width:100vw;
+    justify-content: space-around;
+
+}
+#input-area button{
+    color:black;
+    font-size: 2em;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 1em;
+    &:hover{
+        text-shadow: 2px 2px 3px black;
+    }
+    &:active{
+        color:red;
+        
+    }
+}
+textarea{
+    background-color:saddlebrown;
+    width:3vw;
+    height:3vh;
+    overflow: hidden;
+    font-family: "Borel", serif;
+    font-weight: 900;    
+    padding: 1em; /* Add padding for content inside the box */
+    border: 1px solid grey; /* Add a border */
+    border-radius: 1em; /* Optional: rounded corners */
+    font-size: 2em; /* Make the text larger */
+}
+
+table{
+    margin: auto;
+    margin-top: 2em;
+    border: 3px solid black;
+
+}
+tr{
+    background-color: white;
+}

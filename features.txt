@@ -1,0 +1,5 @@
+1.
+    used font style like borel and rubik Puddles to keep the look of page playful and enjoyable.
+
+2.
+    mentioned necessary comments for understanding which file is linked for what purpose
