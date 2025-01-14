@@ -11,7 +11,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "live-server"
+    "start": "vite preview"
   },
   "author": "PALAK SHARMA",
   "license": "ISC",
