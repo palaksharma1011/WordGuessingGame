@@ -78,6 +78,9 @@ Guidelines for contributing to the project.
 -Store game data in a database (e.g., MongoDB or MySQL).
 
 ## Contact
-Your Name - [palak16306@gmail.com](palak16306@gmail.com)
+Name- Palak Sharma
+Github -[https://github.com/palaksharma1011](https://github.com/palaksharma1011)
+linkedin-[https://www.linkedin.com/in/palak-sharma1011/](https://www.linkedin.com/in/palak-sharma1011/)
+Email - [palak16306@gmail.com](palak16306@gmail.com)
 
 Project Link: [https://github.com/palaksharma1011/WordGuessingGame.git](https://github.com/palaksharma1011/WordGuessingGame.git)
